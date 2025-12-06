@@ -1,13 +1,13 @@
 // Khởi tạo Firebase (dán config của em vào đây!)
 const firebaseConfig = {
   // ← DÁN CONFIG TỪ BƯỚC 1 VÀO ĐÂY, thay thế toàn bộ object này
-  apiKey: "AIzaSyB...",  // Ví dụ thôi, thay bằng của em
-  authDomain: "your-project.firebaseapp.com",
-  databaseURL: "https://your-project-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "your-project",
-  storageBucket: "your-project.appspot.com",
-  messagingSenderId: "123...",
-  appId: "1:123...:web:abc..."
+    apiKey: "AIzaSyB66hvcmzbWTdv3iHerQwd3TkK0aGWX_v0",
+  authDomain: "messenger-clone-cua-em.firebaseapp.com",
+  databaseURL: "https://messenger-clone-cua-em-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "messenger-clone-cua-em",
+  storageBucket: "messenger-clone-cua-em.firebasestorage.app",
+  messagingSenderId: "638516783970",
+  appId: "1:638516783970:web:853172912425256f311a3b"
 };
 
 firebase.initializeApp(firebaseConfig);
