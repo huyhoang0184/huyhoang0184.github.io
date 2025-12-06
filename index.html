@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Messenger Clone Của Em</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Danh sách cuộc trò chuyện (đơn giản hóa, chỉ 1 phòng) -->
+    <div class="sidebar">
+      <div class="header">
+        <h2>Chats</h2>
+        <i class="fa-solid fa-edit" id="newChat"></i>
+      </div>
+      <div class="chat-list">
+        <div class="chat-item" onclick="loadChat('phong-rieng-cua-em')">
+          <img src="https://i.pravatar.cc/50?img=1" alt="avatar"/>
+          <div class="info">
+            <h4>Bạn Thân Nhất ❤️</h4>
+            <small>Online</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Khu vực chat chính -->
+    <div class="chat-area" id="chatArea">
+      <div class="chat-header">
+        <img src="https://i.pravatar.cc/50?img=2" alt="avatar"/>
+        <div>
+          <h3>Bạn Thân Nhất</h3>
+          <small id="typing">Đang hoạt động</small>
+        </div>
+      </div>
+
+      <div class="messages" id="messages"></div>
+
+      <div class="chat-input">
+        <input type="text" id="messageInput" placeholder="Nhập tin nhắn..." autocomplete="off"/>
+        <button id="sendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
