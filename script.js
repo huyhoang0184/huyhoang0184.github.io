@@ -19,7 +19,7 @@ const sendBtn = document.getElementById("sendBtn");
 const typing = document.getElementById("typing");
 
 // Tên phòng chat (em với crush chat chung phòng này)
-let currentRoom = "nhom-chat-ban-";  // Có thể đổi thành tên riêng
+let currentRoom = "nhóm-chat-bạn-bè";  // Có thể đổi thành tên riêng
 const messagesRef = db.ref("chats/" + currentRoom);
 
 function loadChat(room) {
